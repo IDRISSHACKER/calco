@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+.container {
+  width: 35%;
+  min-height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  -webkit-box-shadow: 1px 1px 5px #111;
+          box-shadow: 1px 1px 5px #111;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container h1 {
+  padding: 10px;
+  color: #01bc63;
+  font-weight: bold;
+}
+
+.container-screen {
+  border: 1px solid #f1f1f1;
+  padding: 30px;
+  width: 90%;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-box-shadow: 1px 1px 5px #111;
+          box-shadow: 1px 1px 5px #111;
+  overflow: hidden;
+}
+
+.container-screen span {
+  color: #01bc63;
+}
+
+.container-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.container-buttons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.container-buttons-box-button {
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  width: 23%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #414141;
+  color: white;
+  -webkit-box-shadow: 1px 1px 5px #474747;
+          box-shadow: 1px 1px 5px #474747;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.container-buttons-box-button:hover {
+  opacity: 0.5;
+}
+
+.effacer {
+  background: #ff1717;
+  color: white;
+  -webkit-box-shadow: 1px 1px 5px #ff1717;
+          box-shadow: 1px 1px 5px #ff1717;
+}
+
+.clean {
+  background: #2aa3ac;
+  color: white;
+  -webkit-box-shadow: 1px 1px 5px #2aa3ac;
+          box-shadow: 1px 1px 5px #2aa3ac;
+}
+
+.egal {
+  background: #ff893a;
+  color: white;
+  -webkit-box-shadow: 1px 1px 5px #ff893a;
+          box-shadow: 1px 1px 5px #ff893a;
+}
+
+.fois, .moins, .plus, .diviser, .pourcentage, .virgule {
+  background: #01bc63;
+  color: white;
+  -webkit-box-shadow: 1px 1px 5px #01bc63;
+          box-shadow: 1px 1px 5px #01bc63;
+}
+/*# sourceMappingURL=style.css.map */
