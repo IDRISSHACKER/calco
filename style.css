@@ -146,4 +146,10 @@ body {
   -webkit-box-shadow: 1px 1px 5px #01bc63;
           box-shadow: 1px 1px 5px #01bc63;
 }
+
+@media screen and (max-width: 910px) {
+  .container {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
