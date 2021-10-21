@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  width: 35%;
+  width: 45%;
   min-height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +63,7 @@ body {
   border-radius: 10px;
   font-weight: bold;
   font-size: 30px;
+  background: rgba(1, 188, 99, 0.1);
   -webkit-box-shadow: 1px 1px 5px #111;
           box-shadow: 1px 1px 5px #111;
   overflow: hidden;
