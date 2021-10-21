@@ -25,7 +25,10 @@ let addition = () => {
     let new_valeurs = ecran.innerHTML.split('')
     new_valeurs.forEach(element => {
         if (element == "+") {
-            console.log(new_valeurs.indexOf(element))
+            let partie1 = parseInt(new_valeurs.slice(0, new_valeurs.indexOf(element)))
+            let partie2 = parseInt(new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1))
+            let nbre = partie1 + partie2
+            ecran.innerHTML = nbre;
         }
     })
 }
