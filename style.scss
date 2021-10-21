@@ -103,3 +103,15 @@ body{
     color: white;
     box-shadow: 1px 1px 5px $vert;
 }
+
+@media screen and (max-width: 910px) {
+    .container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container{
+        width: 95%;
+    }
+}
