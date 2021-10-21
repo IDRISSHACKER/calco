@@ -28,8 +28,8 @@ let addition = () => {
     let new_valeurs = ecran.innerHTML.split('')
     new_valeurs.forEach(element => {
         if (element == "+") {
-            let partie1 = parseInt(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
-            let partie2 = parseInt((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
+            let partie1 = parseFloat(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
+            let partie2 = parseFloat((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
             // console.log(partie1)
             // console.log(partie2)
             let nbre = partie1 + partie2
@@ -42,8 +42,8 @@ let soustraction = () => {
     let new_valeurs = ecran.innerHTML.split('')
     new_valeurs.forEach(element => {
         if (element == "-") {
-            let partie1 = parseInt(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
-            let partie2 = parseInt((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
+            let partie1 = parseFloat(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
+            let partie2 = parseFloat((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
             // console.log(partie1)
             // console.log(partie2)
             let nbre = partie1 - partie2
@@ -56,8 +56,8 @@ let division = () => {
     let new_valeurs = ecran.innerHTML.split('')
     new_valeurs.forEach(element => {
         if (element == "/") {
-            let partie1 = parseInt(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
-            let partie2 = parseInt((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
+            let partie1 = parseFloat(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
+            let partie2 = parseFloat((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
             // console.log(partie1)
             // console.log(partie2)
             let nbre = partie1 / partie2
@@ -70,8 +70,8 @@ let multiplication = () => {
     let new_valeurs = ecran.innerHTML.split('')
     new_valeurs.forEach(element => {
         if (element == "X") {
-            let partie1 = parseInt(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
-            let partie2 = parseInt((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
+            let partie1 = parseFloat(((new_valeurs.slice(0, new_valeurs.indexOf(element)))).join(''))
+            let partie2 = parseFloat((new_valeurs.slice((new_valeurs.indexOf(element))+1, new_valeurs.length+1)).join(''))
             // console.log(partie1)
             // console.log(partie2)
             let nbre = partie1 * partie2
