@@ -57,6 +57,7 @@ body {
 }
 
 .container-screen {
+  position: relative;
   border: 1px solid #f1f1f1;
   padding: 30px;
   width: 90%;
@@ -71,6 +72,58 @@ body {
 
 .container-screen span {
   color: #01bc63;
+}
+
+.container-screen.error {
+  background: rgba(255, 23, 23, 0.2);
+  -webkit-animation: span .3s ease-in-out;
+          animation: span .3s ease-in-out;
+}
+
+.container-screen.error::before {
+  content: 'Error';
+  position: absolute;
+  font-weight: bold;
+  color: #ff1717;
+  top: 15px;
+}
+
+@-webkit-keyframes span {
+  25% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  75% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes span {
+  25% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  75% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
 }
 
 .container-buttons {
@@ -141,7 +194,7 @@ body {
           box-shadow: 1px 1px 5px #ff893a;
 }
 
-.fois, .moins, .plus, .diviser, .pourcentage, .virgule {
+.fois, .moins, .plus, .diviser, .pourcentage {
   background: #01bc63;
   color: white;
   -webkit-box-shadow: 1px 1px 5px #01bc63;
