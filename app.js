@@ -72,6 +72,7 @@ let addition = () => {
             if (!isNaN(parseFloat(nbre))) {
                 ecran.innerHTML = nbre;   
             }
+            index++
         }
     })
 }
@@ -106,7 +107,11 @@ let division = () => {
             let nbre = partie1 / partie2
             resultat_nombre(nbre)          
             if (!isNaN(parseFloat(nbre))) {
-                ecran.innerHTML = nbre;   
+                ecran.innerHTML = nbre;  
+            }
+            if (nbre == Infinity) {
+                ecran.innerHTML = ""
+                error()
             }
         }
     })

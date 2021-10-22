@@ -53,14 +53,21 @@ body{
         }
     }
     &-screen.error{
+        position: relative;
         background: rgba(#ff1717, $alpha: 0.2);
         animation: span .3s ease-in-out;
         &::before{
             content: 'Error';
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             font-weight: bold;
             color: #ff1717;
-            top: 15px;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
         }
     }
     @keyframes span {
@@ -130,6 +137,10 @@ body{
     color: white;
     box-shadow: 1px 1px 5px $vert;
 }
+
+// .pourcentage{
+//     cursor: none;
+// }
 
 @media screen and (max-width: 910px) {
     .container{
